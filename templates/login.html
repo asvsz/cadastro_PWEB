@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<h1> Entre no Seu Perfil </h1>
+<form  action="/login" method="POST">
+    <label for="nomeusuario">Nome de Usuário:</label>
+    <input type="text" id="nomeusuario" name="nomeusuario" required><br><br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required><br><br>
+    <input type="submit" value="Login">
+</form>
+<p>Não possui uma conta? <a href="/registrar">Registre-se aqui</a></p>
+
+{% endblock %}

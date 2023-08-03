@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+
+<h1> Registre um perfil </h1>
+<form  action="/registrar" method="POST">
+    <label for="nomeusuario">Nome de Usuário:</label>
+    <input type="text" id="nomeusuario" name="nomeusuario" required><br><br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required><br><br>
+    <input type="submit" value="Registrar">
+</form>
+<p>Já possui um perfil, entre aqui: <a href="/login">Entrar</a></p>
+
+{% endblock %}
